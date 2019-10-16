@@ -31,7 +31,7 @@ public class Raccoon extends Animal {
     }
     
     public String toString(){
-        return "Type: " + type + " Name: "+ getName() + ", Age: " + getAge() + ", Weight: " + getWeight() + ", Height: " + getHeight() + ".";
+        return "Type: " + type + ", Name: "+ getName() + ", Age: " + getAge() + ", Weight: " + getWeight() + ", Height: " + getHeight() + ".";
     }
 /*
     public String getName() {

@@ -15,6 +15,11 @@ public class Gopher extends Animal{
         System.out.println("Disease: " + disease + ", Doctor: " + doctor + ", Nurse: " + nurse);
         System.out.println();
     }
+    
+    public String toString(){
+        return "Type: " + type + ", Name: "+ getName() + ", Age: " + getAge() + ", Weight: " + getWeight() + ", Height: " + getHeight() + ".";
+    }
+    
    /* private String name;
     private float weight;
     private int age;

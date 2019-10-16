@@ -14,8 +14,6 @@ public class Clinic {
         Doctor arnold = new Doctor("Therapist", "Arnold");
         Nurse nur = new Nurse("Asia");
         
-        Beaver[] beaverArr = new Beaver[6];
-        
         Beaver beaverHuan = new Beaver("Huan", 5.7f, 4, 37); //енот
         Beaver beaverArchi = new Beaver("Archi", 0.7f, 2, 23); //суслик
         Beaver beaverToha = new Beaver("Toha", 2.3f, 5, 29); //бобер
@@ -45,12 +43,17 @@ public class Clinic {
         beaverBogdan.setDisease("fever heat");
         beaverHobit.setDisease("tail fracture");
         
+        Beaver[] beaverArr = { beaverHuan, beaverArchi, beaverToha, 
+                               beaverTina, beaverBogdan, beaverHobit };
+        
+        /*
         beaverArr[0] = beaverHuan;
         beaverArr[1] = beaverArchi;
         beaverArr[2] = beaverToha;
         beaverArr[3] = beaverTina;
         beaverArr[4] = beaverBogdan;
         beaverArr[5] = beaverHobit;
+        */
         
         for (Beaver beaverArr1 : beaverArr) {
             if ("sprain".equals(beaverArr1.getDisease())) {
