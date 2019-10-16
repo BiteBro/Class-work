@@ -52,10 +52,9 @@ public class Clinic {
         beaverArr[4] = beaverBogdan;
         beaverArr[5] = beaverHobit;
         
-        for (int i = 0; i < beaverArr.length; i++) {
-            
-            if(beaverArr[i].getDisease() == "sprain"){
-            beaverArr[i].patientInfo();
+        for (Beaver beaverArr1 : beaverArr) {
+            if ("sprain".equals(beaverArr1.getDisease())) {
+                beaverArr1.patientInfo();
             }            
         }
         
@@ -78,38 +77,33 @@ public class Clinic {
         animalArr[0] = raccoonHuan;
         animalArr[1] = gopherArchi;
         
-        for (int i = 0; i < animalArr.length; i++) {
-                       
-            animalArr[i].patientInfo();
+        for (Animal animalArr1 : animalArr) {
+            animalArr1.patientInfo();
             System.out.println("");
-                   
         }
+        
+        System.out.println(raccoonHuan.toString());
         
         /*
         Doctor bob = new Doctor("Surgeon", "Bob");
         Doctor arnold = new Doctor("Therapist", "Arnold");
         Nurse nur = new Nurse("Asia");
-        
         Raccoon raccoon = new Raccoon("Huan", 5.7f, 4, 37); //енот
         Gopher gopher = new Gopher("Archi", 0.7f, 2, 23); //суслик
         Beaver beaver = new Beaver("Toha", 4.3f, 5, 31); //бобер
-        
         raccoon.setDoctor(bob);
         gopher.setDoctor(arnold);
         beaver.setDoctor(bob);
-        
         raccoon.setNurse(nur);
         gopher.setNurse(nur);
         beaver.setNurse(nur);
-        
         raccoon.setDisease("sprain");
         gopher.setDisease("fever heat");
         beaver.setDisease("tail fracture");
-        
         raccoon.patientInfo();
         gopher.patientInfo();
         beaver.patientInfo();
-      */
+         */
     }
     
 }
